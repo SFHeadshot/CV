@@ -1,0 +1,586 @@
+/* Colors */
+:root {
+  --burnt-orange: #d9411e;
+  --peach-orange: #f2622e;
+  --burnt-red: #73020c;
+  --lemon-yellow: #f2cb05;
+  --dark-yellow: #f2b705;
+  --blue-purple: #3e38f2;
+  --white: #fff;
+  --background: #005;
+  --primary: #88d5bf;
+  --secondary: #5d6bf8;
+  --third: #e27fcb;
+}
+
+body {
+  background-color: var(--blue-purple);
+  text-align: center;
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Roboto Mono", monospace;
+  color: var(--white);
+}
+
+h1 {
+  font-size: 5rem;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 0px var(--peach-orange), 2px 2px 0px var(--peach-orange),
+    3px 3px 0px var(--peach-orange), 4px 4px 0px var(--peach-orange);
+}
+
+h2 {
+  text-decoration: none;
+}
+
+p {
+  font-family: "Nunito", sans-serif;
+  color: var(--white);
+}
+
+/* Slide Up Nav */
+#slideup {
+  margin-top: 0.5rem;
+}
+
+/* Button */
+.button-34 {
+  background: var(--blue-purple);
+  border-radius: 999px;
+  box-shadow: var(--burnt-orange) 0 10px 20px -10px;
+  box-sizing: border-box;
+  color: #ffffff;
+  cursor: pointer;
+  font-family: Inter, Helvetica, "Apple Color Emoji", "Segoe UI Emoji",
+    NotoColorEmoji, "Noto Color Emoji", "Segoe UI Symbol", "Android Emoji",
+    EmojiSymbols, -apple-system, system-ui, "Segoe UI", Roboto, "Helvetica Neue",
+    "Noto Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  opacity: 1;
+  outline: 0 solid transparent;
+  padding: 8px 18px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: fit-content;
+  word-break: break-word;
+  border: 0;
+}
+
+.button-34:hover {
+  background-color: var(--dark-yellow);
+  transition: 0.7s;
+}
+
+/* Logo */
+.logo {
+  display: flex;
+  margin: 0 auto 5rem auto;
+  width: 20rem;
+}
+
+/* Scroll Down Mouse */
+.top-landing {
+  margin: 5rem auto;
+}
+
+.top-about {
+  margin: 0rem auto;
+}
+
+.top-skills {
+  margin: 1rem auto 10rem auto;
+}
+
+.top-projects {
+  margin: 3rem auto 10rem auto;
+}
+
+.scroll-downs {
+  position: relative;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  width: 2.125rem;
+  height: 3.438rem;
+}
+.mousey {
+  width: 0.188rem;
+  padding: 0.625rem 0.938rem;
+  height: 2.188rem;
+  border: 2px solid #fff;
+  border-radius: 25px;
+  opacity: 0.75;
+  box-sizing: content-box;
+}
+.scroller {
+  width: 3px;
+  height: 10px;
+  border-radius: 25%;
+  background-color: #fff;
+  animation-name: scroll;
+  animation-duration: 2.2s;
+  animation-timing-function: cubic-bezier(0.15, 0.41, 0.69, 0.94);
+  animation-iteration-count: infinite;
+}
+@keyframes scroll {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(15px);
+    opacity: 0;
+  }
+}
+
+/* Glitch Effect*/
+
+.glitch {
+  position: relative;
+  display: inline-block;
+  text-transform: uppercase;
+}
+
+.glitch:after {
+  clip: rect(0, 9999px, 0, 0);
+  content: attr(data-text);
+  left: 0; /* Was 1px */
+  overflow: hidden;
+  position: absolute;
+  text-shadow: -1px 0 #ab77a9;
+  top: 0;
+  -webkit-animation: noise-anim 2s infinite linear alternate-reverse;
+  animation: noise-anim 2s infinite linear alternate-reverse;
+}
+
+.glitch:before {
+  clip: rect(0, 9999px, 0, 0);
+  content: attr(data-text);
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  position: absolute;
+  text-shadow: 2px 0 #05d003;
+  -webkit-animation: noise-anim-2 3s infinite linear alternate-reverse;
+  animation: noise-anim-2 3s infinite linear alternate-reverse;
+}
+.heading:before {
+  transform: translateX(-1px);
+  text-shadow: 1px 0 #a10897;
+}
+.heading:after {
+  transform: translateX(1px);
+  text-shadow: -1px 0 #05d003;
+}
+
+@keyframes noise-anim {
+  0% {
+    clip: rect(21px, 9999px, 57px, 0);
+  }
+  5% {
+    clip: rect(21px, 9999px, 80px, 0);
+  }
+  10% {
+    clip: rect(55px, 9999px, 69px, 0);
+  }
+  15.0% {
+    clip: rect(22px, 9999px, 55px, 0);
+  }
+  20% {
+    clip: rect(38px, 9999px, 69px, 0);
+  }
+  25% {
+    clip: rect(31px, 9999px, 84px, 0);
+  }
+  30.0% {
+    clip: rect(15px, 9999px, 28px, 0);
+  }
+  35% {
+    clip: rect(16px, 9999px, 100px, 0);
+  }
+  40% {
+    clip: rect(25px, 9999px, 10px, 0);
+  }
+  45% {
+    clip: rect(19px, 9999px, 19px, 0);
+  }
+  50% {
+    clip: rect(71px, 9999px, 35px, 0);
+  }
+  55.0% {
+    clip: rect(89px, 9999px, 21px, 0);
+  }
+  60.0% {
+    clip: rect(20px, 9999px, 34px, 0);
+  }
+  65% {
+    clip: rect(22px, 9999px, 61px, 0);
+  }
+  70% {
+    clip: rect(65px, 9999px, 28px, 0);
+  }
+  75% {
+    clip: rect(82px, 9999px, 47px, 0);
+  }
+  80% {
+    clip: rect(64px, 9999px, 11px, 0);
+  }
+  85.0% {
+    clip: rect(63px, 9999px, 28px, 0);
+  }
+  90% {
+    clip: rect(60px, 9999px, 60px, 0);
+  }
+  95% {
+    clip: rect(9px, 9999px, 90px, 0);
+  }
+  100% {
+    clip: rect(40px, 9999px, 62px, 0);
+  }
+}
+@-webkit-keyframes noise-anim {
+  0% {
+    clip: rect(21px, 9999px, 57px, 0);
+  }
+  5% {
+    clip: rect(21px, 9999px, 80px, 0);
+  }
+  10% {
+    clip: rect(55px, 9999px, 69px, 0);
+  }
+  15.0% {
+    clip: rect(22px, 9999px, 55px, 0);
+  }
+  20% {
+    clip: rect(38px, 9999px, 69px, 0);
+  }
+  25% {
+    clip: rect(31px, 9999px, 84px, 0);
+  }
+  30.0% {
+    clip: rect(15px, 9999px, 28px, 0);
+  }
+  35% {
+    clip: rect(16px, 9999px, 100px, 0);
+  }
+  40% {
+    clip: rect(25px, 9999px, 10px, 0);
+  }
+  45% {
+    clip: rect(19px, 9999px, 19px, 0);
+  }
+  50% {
+    clip: rect(71px, 9999px, 35px, 0);
+  }
+  55.0% {
+    clip: rect(89px, 9999px, 21px, 0);
+  }
+  60.0% {
+    clip: rect(20px, 9999px, 34px, 0);
+  }
+  65% {
+    clip: rect(22px, 9999px, 61px, 0);
+  }
+  70% {
+    clip: rect(65px, 9999px, 28px, 0);
+  }
+  75% {
+    clip: rect(82px, 9999px, 47px, 0);
+  }
+  80% {
+    clip: rect(64px, 9999px, 11px, 0);
+  }
+  85.0% {
+    clip: rect(63px, 9999px, 28px, 0);
+  }
+  90% {
+    clip: rect(60px, 9999px, 60px, 0);
+  }
+  95% {
+    clip: rect(9px, 9999px, 90px, 0);
+  }
+  100% {
+    clip: rect(40px, 9999px, 62px, 0);
+  }
+}
+
+@keyframes noise-anim-2 {
+  0% {
+    clip: rect(77px, 9999px, 63px, 0);
+  }
+  5% {
+    clip: rect(7px, 9999px, 6px, 0);
+  }
+  10% {
+    clip: rect(82px, 9999px, 78px, 0);
+  }
+  15.0% {
+    clip: rect(85px, 9999px, 25px, 0);
+  }
+  20% {
+    clip: rect(93px, 9999px, 38px, 0);
+  }
+  25% {
+    clip: rect(70px, 9999px, 96px, 0);
+  }
+  30.0% {
+    clip: rect(41px, 9999px, 72px, 0);
+  }
+  35% {
+    clip: rect(39px, 9999px, 65px, 0);
+  }
+  40% {
+    clip: rect(36px, 9999px, 34px, 0);
+  }
+  45% {
+    clip: rect(84px, 9999px, 96px, 0);
+  }
+  50% {
+    clip: rect(99px, 9999px, 45px, 0);
+  }
+  55.0% {
+    clip: rect(37px, 9999px, 73px, 0);
+  }
+  60.0% {
+    clip: rect(63px, 9999px, 20px, 0);
+  }
+  65% {
+    clip: rect(55px, 9999px, 44px, 0);
+  }
+  70% {
+    clip: rect(58px, 9999px, 11px, 0);
+  }
+  75% {
+    clip: rect(61px, 9999px, 82px, 0);
+  }
+  80% {
+    clip: rect(60px, 9999px, 9px, 0);
+  }
+  85.0% {
+    clip: rect(37px, 9999px, 69px, 0);
+  }
+  90% {
+    clip: rect(32px, 9999px, 64px, 0);
+  }
+  95% {
+    clip: rect(63px, 9999px, 16px, 0);
+  }
+  100% {
+    clip: rect(47px, 9999px, 34px, 0);
+  }
+}
+@-webkit-keyframes noise-anim-2 {
+  0% {
+    clip: rect(77px, 9999px, 63px, 0);
+  }
+  5% {
+    clip: rect(7px, 9999px, 6px, 0);
+  }
+  10% {
+    clip: rect(82px, 9999px, 78px, 0);
+  }
+  15.0% {
+    clip: rect(85px, 9999px, 25px, 0);
+  }
+  20% {
+    clip: rect(93px, 9999px, 38px, 0);
+  }
+  25% {
+    clip: rect(70px, 9999px, 96px, 0);
+  }
+  30.0% {
+    clip: rect(41px, 9999px, 72px, 0);
+  }
+  35% {
+    clip: rect(39px, 9999px, 65px, 0);
+  }
+  40% {
+    clip: rect(36px, 9999px, 34px, 0);
+  }
+  45% {
+    clip: rect(84px, 9999px, 96px, 0);
+  }
+  50% {
+    clip: rect(99px, 9999px, 45px, 0);
+  }
+  55.0% {
+    clip: rect(37px, 9999px, 73px, 0);
+  }
+  60.0% {
+    clip: rect(63px, 9999px, 20px, 0);
+  }
+  65% {
+    clip: rect(55px, 9999px, 44px, 0);
+  }
+  70% {
+    clip: rect(58px, 9999px, 11px, 0);
+  }
+  75% {
+    clip: rect(61px, 9999px, 82px, 0);
+  }
+  80% {
+    clip: rect(60px, 9999px, 9px, 0);
+  }
+  85.0% {
+    clip: rect(37px, 9999px, 69px, 0);
+  }
+  90% {
+    clip: rect(32px, 9999px, 64px, 0);
+  }
+  95% {
+    clip: rect(63px, 9999px, 16px, 0);
+  }
+  100% {
+    clip: rect(47px, 9999px, 34px, 0);
+  }
+}
+
+/* About */
+#about {
+  margin: 7rem 0rem 7rem 0rem;
+}
+
+.about-heading {
+  margin-top: 2rem;
+}
+
+.card {
+  border: none;
+
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.card:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 4px;
+  height: 100%;
+  background-color: var(--dark-yellow);
+  transform: scaleY(1);
+  transition: all 0.5s;
+  transform-origin: bottom;
+}
+
+.card:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 4px;
+  height: 100%;
+  background-color: var(--peach-orange);
+  transform: scaleY(0);
+  transition: all 0.5s;
+  transform-origin: bottom;
+}
+
+.card:hover::after {
+  transform: scaleY(1);
+}
+
+.fonts {
+  font-size: 11px;
+}
+
+.buttons button:nth-child(1) {
+  border: 1px solid #8e24aa !important;
+  color: #8e24aa;
+  height: 40px;
+}
+
+.buttons button:nth-child(1):hover {
+  border: 1px solid #8e24aa !important;
+  color: #fff;
+  height: 40px;
+  background-color: #8e24aa;
+}
+
+.buttons button:nth-child(2) {
+  border: 1px solid #8e24aa !important;
+  background-color: #8e24aa;
+  color: #fff;
+  height: 40px;
+}
+
+.text-black {
+  color: #000;
+}
+
+/* Spacing for Containers */
+.container {
+  align-items: center;
+  display: flex;
+  height: 90vh;
+  justify-content: center;
+}
+
+/* Skills */
+.card-border {
+  margin: 3rem auto;
+  width: 20rem;
+}
+
+.skills-image {
+  height: 240px;
+  width: 320px;
+}
+
+/* Past Projects */
+.projects-heading-space {
+  margin-bottom: 3rem;
+}
+
+/* Contact Me */
+.contact-me-heading-space {
+  margin-bottom: 3rem;
+}
+
+.btn-style {
+  margin-top: 2rem;
+  margin-left: 80%;
+  background-color: var(--peach-orange);
+}
+
+.form-align {
+  text-align: left;
+}
+
+.form-button-submit {
+  position: absolute;
+  right: 3%;
+  bottom: 10%;
+}
+
+.space-bottom-message {
+  margin-bottom: 3rem;
+}
+
+/* Footer */
+#copyright {
+  margin-bottom: 4rem;
+}
+
+.foot {
+  color: var(--white);
+  margin: 4rem auto 1rem auto;
+}

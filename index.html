@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <!-- Bootstrap -->
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito&family=Roboto+Mono&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- FontAwesome -->
+    <script
+      src="https://kit.fontawesome.com/9996666d45.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="icon\favicon.ico" type="image/x-icon" />
+
+    <title>MSKG</title>
+  </head>
+  <body>
+    <!-- Slide Up Navigation Drawer -->
+    <section id="slideup">
+      <button
+        class="btn btn-primary fixed-bottom"
+        type="button"
+        data-bs-toggle="offcanvas"
+        data-bs-target="#offcanvasBottom"
+        aria-controls="offcanvasBottom"
+      >
+        <div id="up">
+          <h5>Click Me!</h5>
+        </div>
+      </button>
+
+      <div
+        class="offcanvas offcanvas-bottom"
+        tabindex="-1"
+        id="offcanvasBottom"
+        aria-labelledby="offcanvasBottomLabel"
+      >
+        <div class="offcanvas-header">
+          <h5 class="topics-heading" id="offcanvasBottomLabel"></h5>
+
+          <!-- Close Button -->
+          <button
+            type="button"
+            class="btn-close text-reset"
+            data-bs-dismiss="offcanvas"
+            aria-label="Close"
+          ></button>
+        </div>
+
+        <div class="offcanvas-body large">
+          <a href="#about-me"><button class="button-34">About Me</button></a>
+          <a href="#skills"><button class="button-34">Skills</button></a>
+          <a href="#projects"><button class="button-34">Projects</button></a>
+          <a href="#contact-me"><button class="button-34">Contact Me</button></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- MSKG Logo -->
+    <section id="top-bar">
+      <img class="logo" src="images\Logo.png" alt="Landing" />
+    </section>
+
+    <!-- Landing Part Of Page -->
+    <section id="Landing">
+      <h1 class="glitch heading" data-text="Hello, I'm Siraaj">
+        Hello, I'm Siraaj
+      </h1>
+
+      <h2>A Self-Taught Programmer, Video Editor and Engineering Student</h2>
+
+      <div class="scroll-downs top-landing">
+        <div class="mousey">
+          <div class="scroller"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Me Anchor-->
+    <div>
+        <a id="about-me"></a>
+      </div>
+    <!-- About Section -->
+    <section id="about">
+      <h1 class="glitch heading about-heading" data-text="Who am I?">
+        Who am I?
+      </h1>
+
+      <div class="container mt-5">
+        <div class="row d-flex justify-content-center">
+          <div class="col-md-7">
+            <div class="card p-3 py-4">
+              <div class="text-center">
+                <img
+                  src="images\profilePicture.png"
+                  width="150rem"
+                  class="rounded-circle"
+                />
+              </div>
+
+              <div class="text-center mt-3">
+                <h5 class="mt-2 mb-0 text-black">
+                  Muhammad Siraaj Khan Girdhurparsadh
+                </h5>
+                <div class="px-4 mt-1">
+                  <p class="text-black">
+                    An Engineering Student with a Passion for Full Stack
+                    Development.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="scroll-downs top-landing">
+              <div class="mousey">
+                <div class="scroller"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Anchor-->
+    <div>
+        <a id="skills"></a>
+    </div>
+    <!-- Skills Section -->
+    <section id="skills">
+      <h1 class="glitch heading" data-text="Skills">Skills</h1>
+
+      <div class="row">
+        <div class="col-lg-4 col-md-12 col-sm-12">
+          <div class="card-border">
+            <div class="card">
+              <img
+                src="images\code.gif"
+                class="card-img-top skills-image"
+                alt="Design and Development"
+              />
+              <div class="card-body">
+                <h3 class="card-title text-black">Design and Development</h3>
+
+                <p class="card-text text-black">
+                  I've had a deep passion for Programming from a young age. A
+                  strong foundation in Java, HTML, CSS, JS, Node.JS, Express and Database Management. Very familiar with Linux, Kali Linux to be exact and Raspberry Pi GPIO. 
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-12 col-sm-12">
+          <div class="card-border">
+            <div class="card">
+              <img
+                src="images\video.gif"
+                class="card-img-top skills-image"
+                alt="Design and Development"
+              />
+              <div class="card-body">
+                <h3 class="card-title text-black">Video Editing</h3>
+
+                <p class="card-text text-black">
+                   I love unleashing my creativity bringing diffrent shots together. I'm experienced with Final Cut Pro X and DaVinci Resolve, Video Editing since 2017.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-12 col-sm-12">
+          <div class="card-border">
+            <div class="card">
+              <img
+                src="images\engineer.gif"
+                class="card-img-top"
+                alt="Design and Development"
+              />
+              <div class="card-body">
+                <h3 class="card-title text-black">Engineer In The Making</h3>
+
+                <p class="card-text text-black">
+                  Currently an Engineering Student. I love breaking down difficult problems into smaller pieces and finding solutions.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="scroll-downs top-skills">
+        <div class="mousey">
+          <div class="scroller"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Anchor-->
+    <div>
+        <a id="projects"></a>
+    </div>
+    <!-- Projects Section -->
+    <section id="projects">
+      <h1 class="glitch heading projects-heading-space" data-text="Projects">Projects</h1>
+
+      <!-- Past Projects Carousel -->
+      <div
+        id="carouselLight"
+        class="carousel carousel-light slide"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselLight"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselLight"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselLight"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="5000">
+            <img
+              src="images\Carosel\PeepsFood.png"
+              class="d-block w-100"
+              alt="Hello Image"
+            />
+            <div class="carousel-caption d-none d-md-block"></div>
+          </div>
+
+          <div class="carousel-item" data-bs-interval="5000">
+            <img
+              src="images\Carosel\TinDog.png"
+              class="d-block w-100"
+              alt="Hello-Gemere Image"
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5></h5>
+              <p></p>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <img
+              src="images\Carosel\CV.png"
+              class="d-block w-100"
+              alt="Hello-Food Image"
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5></h5>
+              <p></p>
+            </div>
+          </div>
+        </div>
+
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselLight"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselLight"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+      <div class="scroll-downs top-projects">
+        <div class="mousey">
+          <div class="scroller"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Me Anchor-->
+    <div>
+        <a id="contact-me"></a>
+    </div>
+    <!-- Contact Me Section -->
+    <section id="contact-me">
+      <h1 class="glitch heading contact-me-heading-space" data-text="Contact Me">Contact Me</h1>
+    
+
+    <form
+    class = "form-align"
+      action="mailto:siraajkhan232@gmail.com"
+      method="post"
+      enctype="text/plain"
+    >   <div class="row">
+          <div class="col-lg-7 mx-auto">
+            <div class="card mt-2 mx-auto p-4 bg-light">
+              <div class="card-body bg-light">
+                <div>
+                  <div class="controls">
+                    <!-- First Name Field -->
+                    <div class="row">
+                      <div class="col-md-6">
+                        <div class="form-group">
+                          <label for="form_name">Firstname *</label>
+                          <input
+                            id="form_name"
+                            type="text"
+                            name="name"
+                            class="form-control"
+                            placeholder="Please enter your firstname *"
+                            required="required"
+                            data-error="Firstname is required."
+                          />
+                        </div>
+                      </div>
+                      <!-- Last Name Field -->
+                      <div class="col-md-6">
+                        <div class="form-group">
+                          <label for="form_lastname">Lastname *</label>
+                          <input
+                            id="form_lastname"
+                            type="text"
+                            name="surname"
+                            class="form-control"
+                            placeholder="Please enter your lastname *"
+                            required="required"
+                            data-error="Lastname is required."
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <!-- Email Field -->
+                      <div class="col-md-6">
+                        <div class="form-group">
+                          <label for="form_email">Email *</label>
+                          <input
+                            id="form_email"
+                            type="email"
+                            name="email"
+                            class="form-control"
+                            placeholder="Please enter your email *"
+                            required="required"
+                            data-error="Valid email is required."
+                          />
+                        </div>
+                      </div>
+
+                      <!-- Specification of Message to be sent Field -->
+                      <div class="col-md-6">
+                        <div class="form-group">
+                          <label for="form_need"
+                            >Please specify your need *</label
+                          >
+                          <select
+                            id="form_need"
+                            name="need"
+                            class="form-control"
+                            required="required"
+                            data-error="Please specify your need."
+                          >
+                            <option value="" selected="" disabled="">
+                              --Select Your Issue--
+                            </option>
+                            <option>Website Development</option>
+                            <option>Video Editing</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <!-- Message to be sent -->
+                      <div class="col-md-12">
+                        <div class="form-group">
+                          <label for="form_message"
+                            >Message (Some details regarding your request)
+                            *</label
+                          >
+                          <textarea
+                            id="form_message"
+                            name="message"
+                            class="form-control space-bottom-message"
+                            placeholder="Write your message here."
+                            rows="4"
+                            required="required"
+                            data-error="Please, leave us a message."
+                          ></textarea>
+                        </div>
+                      </div>
+
+                      <!-- Submit Button -->
+                      <div class="col-md-12">
+                        <input
+                          type="submit"
+                          class="button-34 form-button-submit"
+                          
+                          value="Send Request"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- /.8 -->
+          </div>
+          <!-- /.row-->
+        </div>
+      </div>
+    </form>
+
+    </section>
+
+    <!-- Copyright Section -->
+    <section id = "copyright">
+   <footer class = "foot">
+    © 2022 Copyright:
+
+   </footer>
+    </section>
+
+    <!-- Bootstrap JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Custom JS -->
+    <script src="js/index.js"></script>
+  </body>
+</html>
